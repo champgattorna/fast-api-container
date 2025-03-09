@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: fastapi
-        image: ghcr.io/champgattorna/fast-api-container:4e9f3f669549533fc3150e6d87e82cbfab681be4
+        image: ghcr.io/champgattorna/fast-api-container:latest
         ports:
         - containerPort: 80
 ---
