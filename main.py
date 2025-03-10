@@ -1,17 +1,6 @@
 import os
 import logging
 from fastapi import FastAPI, HTTPException
-from pydantic_settings import BaseSettings
-
-# Configuration using Pydantic Settings
-class Settings(BaseSettings):
-    app_name: str = "FastAPI"
-    environment: str = os.getenv("ENVIRONMENT", "development")
-
-    class Config:
-        env_file = ".env"
-
-settings = Settings()
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
