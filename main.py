@@ -6,7 +6,7 @@ from fastapi import FastAPI, HTTPException
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title=settings.app_name)
+app = FastAPI()
 
 @app.get("/")
 async def read_root():
